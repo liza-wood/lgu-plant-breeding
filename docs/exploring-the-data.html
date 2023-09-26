@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>2 Exploring the data | Plant breeding innovation trajectories at LGUs</title>
+  <meta name="description" content="2 Exploring the data | Plant breeding innovation trajectories at LGUs" />
+  <meta name="generator" content="bookdown 0.35.1 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="2 Exploring the data | Plant breeding innovation trajectories at LGUs" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta name="github-repo" content="liza-wood/lgu-plant-breeding" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="2 Exploring the data | Plant breeding innovation trajectories at LGUs" />
+  
+  
+  
+
+<meta name="author" content="Liza Wood" />
+
+
+<meta name="date" content="2023-09-26" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="who-breeds-what.html"/>
+<link rel="next" href="who-buys-what.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+<script src="libs/htmlwidgets-1.6.2/htmlwidgets.js"></script>
+<link href="libs/datatables-css-0.0.0/datatables-crosstalk.css" rel="stylesheet" />
+<script src="libs/datatables-binding-0.28/datatables.js"></script>
+<link href="libs/dt-core-1.13.4/css/jquery.dataTables.min.css" rel="stylesheet" />
+<link href="libs/dt-core-1.13.4/css/jquery.dataTables.extra.css" rel="stylesheet" />
+<script src="libs/dt-core-1.13.4/js/jquery.dataTables.min.js"></script>
+<link href="libs/crosstalk-1.2.0/css/crosstalk.min.css" rel="stylesheet" />
+<script src="libs/crosstalk-1.2.0/js/crosstalk.min.js"></script>
+<script src="libs/kePrint-0.0.1/kePrint.js"></script>
+<link href="libs/lightable-0.0.1/lightable.css" rel="stylesheet" />
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+
+<link rel="stylesheet" href="styling.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="https://liza-wood.github.io/">
+          </a></li>
+<li><a href="./" style="font-size: 16px">Plant breeding trajectories</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Overview</a></li>
+<li class="chapter" data-level="1" data-path="who-breeds-what.html"><a href="who-breeds-what.html"><i class="fa fa-check"></i><b>1</b> Who breeds what?</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="who-breeds-what.html"><a href="who-breeds-what.html#introduction"><i class="fa fa-check"></i><b>1.1</b> Introduction</a></li>
+<li class="chapter" data-level="1.2" data-path="who-breeds-what.html"><a href="who-breeds-what.html#what-plant-material-have-lgus-been-developing"><i class="fa fa-check"></i><b>1.2</b> What plant material have LGUs been developing?</a></li>
+<li class="chapter" data-level="1.3" data-path="who-breeds-what.html"><a href="who-breeds-what.html#how-does-plant-variety-development-vary-across-the-us"><i class="fa fa-check"></i><b>1.3</b> How does plant variety development vary across the US?</a></li>
+<li class="chapter" data-level="1.4" data-path="who-breeds-what.html"><a href="who-breeds-what.html#how-have-lgus-been-protecting-their-plant-material"><i class="fa fa-check"></i><b>1.4</b> How have LGUs been protecting their plant material?</a></li>
+<li class="chapter" data-level="1.5" data-path="who-breeds-what.html"><a href="who-breeds-what.html#forthcoming-what-qualities-do-these-plants-have"><i class="fa fa-check"></i><b>1.5</b> Forthcoming: What qualities do these plants have?</a></li>
+<li class="chapter" data-level="1.6" data-path="who-breeds-what.html"><a href="who-breeds-what.html#notes--"><i class="fa fa-check"></i><b>1.6</b> Notes {-}:</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="exploring-the-data.html"><a href="exploring-the-data.html"><i class="fa fa-check"></i><b>2</b> Exploring the data</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="exploring-the-data.html"><a href="exploring-the-data.html#describe-the-all_awards-data"><i class="fa fa-check"></i><b>2.1</b> Describe the all_awards data</a></li>
+<li class="chapter" data-level="2.2" data-path="exploring-the-data.html"><a href="exploring-the-data.html#describe-the-inventors-data"><i class="fa fa-check"></i><b>2.2</b> Describe the inventors data</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="who-buys-what.html"><a href="who-buys-what.html"><i class="fa fa-check"></i><b>3</b> Who buys what?</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="who-buys-what.html"><a href="who-buys-what.html#introduction-1"><i class="fa fa-check"></i><b>3.1</b> Introduction</a></li>
+<li class="chapter" data-level="3.2" data-path="who-buys-what.html"><a href="who-buys-what.html#what-crops-are-being-licensed"><i class="fa fa-check"></i><b>3.2</b> What crops are being licensed?</a></li>
+<li class="chapter" data-level="3.3" data-path="who-buys-what.html"><a href="who-buys-what.html#how-has-licensing-changed-over-time"><i class="fa fa-check"></i><b>3.3</b> How has licensing changed over time?</a></li>
+<li class="chapter" data-level="3.4" data-path="who-buys-what.html"><a href="who-buys-what.html#who-is-licensing-lgu-plant-material"><i class="fa fa-check"></i><b>3.4</b> Who is licensing LGU plant material?</a></li>
+<li class="chapter" data-level="3.5" data-path="who-buys-what.html"><a href="who-buys-what.html#what-do-we-know-about-company-licensees"><i class="fa fa-check"></i><b>3.5</b> What do we know about company licensees?</a>
+<ul>
+<li class="chapter" data-level="3.5.1" data-path="who-buys-what.html"><a href="who-buys-what.html#do-certain-lgus-trend-towards-small-or-large-company-clients"><i class="fa fa-check"></i><b>3.5.1</b> Do certain LGUs trend towards small or large company clients?</a></li>
+<li class="chapter" data-level="3.5.2" data-path="who-buys-what.html"><a href="who-buys-what.html#do-certain-crop-categories-trend-towards-small-or-large-company-clients"><i class="fa fa-check"></i><b>3.5.2</b> Do certain crop categories trend towards small or large company clients?</a></li>
+</ul></li>
+<li class="chapter" data-level="3.6" data-path="who-buys-what.html"><a href="who-buys-what.html#variety-licensing-networks"><i class="fa fa-check"></i><b>3.6</b> Variety licensing networks</a></li>
+</ul></li>
+<li class="divider"></li>
+</a>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Plant breeding innovation trajectories at LGUs</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="exploring-the-data" class="section level1 hasAnchor" number="2">
+<h1><span class="header-section-number">2</span> Exploring the data<a href="exploring-the-data.html#exploring-the-data" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>For the first couple weeks, I’d like us to describe, analyze, and visualize the data we have for ‘awards’ and ‘inventors’. The awards data here is data requested from universities about the grants awarded to College of Agriculture and Environmental Science (or equivalent). This will include a wide range of departments for each university, none of them quite matching up. The inventor data is a brief index of the inventor names that we have from our licensing data.</p>
+<p>Below I will provide an outline of general goals for describing, analyzing, and visualizing the data, but feel free to add your own questions/answers. Please use this script as a place to take notes on your process, identify places that you’re stuck, or have questions about the data. Insert code chunks under each prompt to answer the questions and organize the Rmd that way.</p>
+<div id="describe-the-all_awards-data" class="section level2 hasAnchor" number="2.1">
+<h2><span class="header-section-number">2.1</span> Describe the all_awards data<a href="exploring-the-data.html#describe-the-all_awards-data" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<ol style="list-style-type: decimal">
+<li><p>What are the columns in our all_awards data? Write out some ‘data documentation’ by making a list of all the columns and writing our short descriptions of each of them. These will help you and your collaborators know what they’re looking at when they first access the data. If there are any irrelevant columns, remove them with the select function.</p></li>
+<li><p>Next we want to make some summaries of the all_awards data. Take a look at the columns we have and think about what you’d like to know about the data. For instance:</p></li>
+</ol>
+<ul>
+<li>Across all of the grants in our awards data, what is the average amount of funding a project receives?</li>
+<li>Does this amount vary across universities? For example, how much money has each university gotten each year? Try to report this as both an average per university per year, and also maybe as a sum per university per year. (Hint: Remember the group_by and summarize functions. You can group_by uni_state and year, then calculate the mean or sum up their funding amounts)</li>
+<li>Do a bit of exploring for UC Davis only (Hint: filter for just California). Within UC Davis, how does funding vary across department? Again, remember the group_by and summarize functions.
+<ul>
+<li>As you explore the data, take note: What issues do you see the with data? Is it ‘clean’?</li>
+</ul></li>
+</ul>
+</div>
+<div id="describe-the-inventors-data" class="section level2 hasAnchor" number="2.2">
+<h2><span class="header-section-number">2.2</span> Describe the inventors data<a href="exploring-the-data.html#describe-the-inventors-data" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Here you’ll want to repeat the same steps from above (in concept), with the inventors data.</p>
+<ol start="3" style="list-style-type: decimal">
+<li><p>What are the columns in our inventors data? Write out some ‘data documentation’ by making a list of all the columns and writing our short descriptions of each of them. These will help you and your collaborators know what they’re looking at when they first access the data. If there are any irrelevant columns, remove them with the select function.</p></li>
+<li><p>Next we want to make some summaries of the inventors data. Take a look at the columns we have and think about what you’d like to know about the data. For instance:</p></li>
+</ol>
+<ul>
+<li>How many inventors do we have from each university?</li>
+<li>How many <em>unique</em> inventors do we have in our inventor data?</li>
+<li>How does this number compare to the number of all the <em>unique</em> inventors (or PIs) we have in our awards data?<br />
+</li>
+<li>How does this number compare to the number of the breeder inventors (or PIs) we have in our awards data? (Hint: You will need to filter all_awards so that breeder == T before making comparison). Based on this, how well does the funding data represent all of the inventors we have?
+<ul>
+<li>Why might explain why some inventors are missing?</li>
+</ul></li>
+</ul>
+<ol start="5" style="list-style-type: decimal">
+<li>Consider breeder-award data:</li>
+</ol>
+<ul>
+<li>Of the award data that we have for breeder inventors (so keep using your filtered breeder == T data frame), what departments are the breeders coming from? How many breeders are in each department?</li>
+<li>Again considering only the breeder award data, how much money has each university’s breeders gotten each year? (Hint: again, group_by uni_state and year again with this data frame)</li>
+<li>Who are the top funders of awards to breeders? (i.e. who is giving out the most money?)</li>
+</ul>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="who-breeds-what.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="who-buys-what.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": false,
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/liza-wood/lgu-plant-breeding/edit/master/02_funding-overview.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": "https://github.com/liza-wood/lgu-plant-breeding/blob/master/02_funding-overview.Rmd",
+"text": null
+},
+"download": null,
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "section"
+},
+"code_folding": "show"
+});
+});
+</script>
+
+</body>
+
+</html>

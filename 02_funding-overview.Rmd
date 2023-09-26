@@ -1,0 +1,2 @@
+```{r, child = '~/Documents/Davis/R-Projects/lgu/script/03_analysis/who_funds_what.Rmd'}
+```

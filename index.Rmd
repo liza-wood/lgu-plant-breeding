@@ -1,10 +1,10 @@
 ---
-title: TITLE
-author: [YOUR NAME]
+title: Plant breeding innovation trajectories at LGUs
+author: Liza Wood
 date: "`r Sys.Date()`"
 
-github-repo: liza-wood/YOUR_REPO
-url: "https://liza-wood.github.io/YOUR_REPO/"
+github-repo: liza-wood/lgu-plant-breeding
+url: "https://liza-wood.github.io/lgu-plant-breeding/"
 
 site: "bookdown::bookdown_site"
 knit: "bookdown::render_book"
@@ -17,17 +17,23 @@ output:
       toc: 
         before: |
           <li><a href="https://liza-wood.github.io/">
-            <img src="IMAGE_LINK" style="height: 100%; width: 100%; object-fit: contain" />
-          </a></li>
-          <li><a href="./" style="font-size: 16px">YOUR WORKSHOP TITLE</a></li>
+                    </a></li>
+          <li><a href="./" style="font-size: 16px">Plant breeding trajectories</a></li>
         after: |
           </a>
         collapse: section
       sharing: no
-      view: https://github.com/liza-wood/YOUR_REPO/blob/master/%s
-      edit: https://github.com/liza-wood/YOUR_REPO/edit/master/%s
+      view: https://github.com/liza-wood/lgu-plant-breeding/blob/master/%s
+      edit: https://github.com/liza-wood/lgu-plant-breeding/edit/master/%s
 ---
 
 # Overview {-}
 
-YOUR DESCRIPTION, LEARNING GOALS, PREREQUISITES, ETC
+This webpage presents summaries of a research effort to bring together several data sets related to plant variety development at Land Grant Universities (LGUs) in the United States. This work groups data into four major categories:  
+
+1. **Plant intellectual property owned by LGUs:** These data are from the USDA PVPO and US PTO via `patentR` and `patentsview` packages that wrap around the Patents View API, filtered to match Land Grant University names.  
+2. **LGU plant variety licensing agreements:** These data were requested from all 50 1862 LGUs. The focus was on licensing agreements made between 2000-2020, with data on what plant variety was licensed, to whom, and with what restrictions. 
+3. **Licensee profiles:** The license data collected from Part 2 were used to create an index of licensees. Licensees were searched in the Dun & Bradstreet Hoovers database, which includes company profile data, to identify the location, size (sales and employees), and co-ownership structure of the licensees. 
+4. **LGU awards.** These data were requested from 25 LGUs (respondents to licensing request) for the time span 2000-2020. The focus was on awards data to the university's closest thing to a College of Agriculture, which would likely include breeders as well as a host of other researchers.  
+
+The analysis for these data are ongoing, and what follows are preliminary descriptive summaries of the data we have collected and cleaned. Note: There are still several errors and the data presented is still not entirely clean, so please excuse any errors and take results as preliminary.  
