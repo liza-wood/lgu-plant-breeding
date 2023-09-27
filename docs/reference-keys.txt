@@ -22,4 +22,4 @@ who-is-licensing-lgu-plant-material
 what-do-we-know-about-company-licensees
 do-certain-lgus-trend-towards-small-or-large-company-clients
 do-certain-crop-categories-trend-towards-small-or-large-company-clients
-variety-licensing-networks
+draft-variety-licensing-networks
