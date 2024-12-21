@@ -38,6 +38,12 @@ This webpage presents summaries of a research effort to bring together several d
 
 The analysis for these data are ongoing, and what follows are preliminary descriptive summaries of the data we have collected and cleaned. Note: There are still several errors and the data presented is still not entirely clean, so please excuse any errors and take results as preliminary. 
 
+## Citation {-} 
+
+Please use the following citation:
+
+Wood, L., Vera, A., & Victoria, F. (2023). Plant breeding innovation trajectories at LGUs. https://doi.org/10.5281/zenodo.14537188
+
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-HJX1JG1FCV"></script>
 <script>
