@@ -42,7 +42,7 @@ The analysis for these data are ongoing, and what follows are preliminary descri
 
 Please use the following citation:
 
-Wood, L., Vera, A., & Victoria, F. (2023). Plant breeding innovation trajectories at LGUs. https://doi.org/10.5281/zenodo.14537188
+Wood, L., Vera, A., & Fletcher, V. (2023). Plant breeding innovation trajectories at LGUs. https://doi.org/10.5281/zenodo.14537188
 
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-HJX1JG1FCV"></script>
